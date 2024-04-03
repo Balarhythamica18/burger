@@ -1,0 +1,384 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;outline: none;border:none;text-decoration: none;
+    color:orange;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    height:100vh;
+}
+
+ .header{
+    position:fixed;
+    top:0;left:0;right:0;
+    background:#12161b;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index:1000;
+}
+.header img{
+        z-index: 4;
+        border-radius:50px;
+}
+.header .nav ul li{
+    display:inline;
+    padding:0.5rem;
+}
+.header ul li a{
+    font-size: 1.5rem;
+    color:orange;
+    text-decoration: none;
+}
+
+
+
+
+
+.title{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/menu4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title p{
+   position:absolute;
+    font-weight: light;
+    top:28%;
+    left:38%;
+    font-size:80px;
+}
+.title i{color:orange;}
+span{
+    position:absolute;
+    top:75%;
+    font-size:50px;
+    left:70%;
+}
+
+
+
+.container-2, .container-3{
+    width:100%;
+    min-height:620px;
+    position:relative;
+    background-color:#12161b;
+} 
+.container-4, .container-5{
+    min-height: 400px;
+    background-color:#12161b;
+}
+
+.aboutus p, .menu p,.customer-review,.contact-us{
+    background-color: #12161b;
+    padding:20px;
+    text-align: center;
+    font-weight:bolder;
+    font-size: x-large;
+}
+.history{
+    position:relative;
+    top:50px;
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left:40px;
+    padding-right:40px;
+}
+.history img{
+    width:400px;
+    height:400px;
+}
+.history p{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: small;
+    height:max-content;
+    width:500px;
+}
+
+
+.card{
+    height:250px;
+    width:200px;
+    border:1px solid #12161b;
+    border-radius:20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin:20px auto;
+    position:relative;
+    top:40px;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+
+}
+.card:hover{
+    transform: translateY(-10px) scale(1.1);
+}
+.card-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card img{
+    width:100%;
+    height:150px;
+    border-radius:5px 5px 0 0;
+}
+.card .details{
+    padding:5px;
+    background-color: #fff;
+    letter-spacing:2px;
+    font-size: x-small;
+}
+h3{
+    margin-top:0;
+    color:#333;
+    text-align: center;
+    padding:4px;
+    font-size: x-small;font-weight: bolder;
+}
+.card .price{
+    font-weight: bold;
+    color:green;
+}
+.othermenu{
+    position:relative;
+    top:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+
+}
+
+.sides, .Drinks, .Desserts{
+    height:200px;
+    width:200px;font-weight: bolder; font-size: large;
+    border:1px solid #12161b;
+    border-radius:20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin:20px auto;position:relative;
+   
+
+}
+.sides p, .Drinks p, .Desserts p{
+    position: relative;text-align: center;bottom:5px;
+}
+.sides img,.Drinks img,.Desserts img{
+    height:300px; width:300px;position: absolute; z-index:1; opacity:0.3;
+}
+.list p{text-align: center; padding:10px; font-size:large; color:green}
+.othermenu ul li{list-style: none;padding:10px;position:relative;z-index:3; font-size: small;}
+
+.customer-review {text-align: center; font-weight: bolder; font-size: x-large;position:relative;top:100px;}
+.review-main{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.review{
+    margin-top:100px;
+    position: relative;
+    top:30px;
+    height:200px;
+    width:200px;
+    display:flex;
+}
+.review img{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
+b{color:#ffffff;}
+.review p{font-size: small; padding:3px;}
+
+
+.map{
+    margin-top: 50px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.map img{
+    height:auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding:10px;
+}
+form p{
+    font-size:12px;
+}
+label{
+    margin-bottom:5px;
+    font-weight: bolder;
+}
+input[type="text"],input[type="email"],textarea{
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    border-bottom:1px solid #d7a44c;
+    outline:none;
+    background-color: #12161b;
+    color:white;
+}
+form button{
+    padding:10px 20px;
+    background-color:orange;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+.container-6{
+    background-color: #12161b;
+    display: flex;
+    justify-content: space-evenly;
+    padding:10px;
+}
+.container-6 .box{
+    flex:1 1 25rem;
+}
+.container-6 .box h2{
+    color:#fff;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+.box li, .box a{
+    padding-top:8px;
+    display: flex;
+    font-size:small;
+    padding-bottom:8px;
+
+}
+.box a {
+    text-decoration: none;
+    color:orange;
+}
+.credits{
+    height:20px;
+    width:100%;
+    background-color: white;
+    text-align: center;
+    padding:10px;
+}
+.credits p{
+    padding-bottom:10px;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding:1rem;
+    }
+    .title p, .title span{
+        font-size:35px;
+    }
+    
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding:1rem;
+
+    }
+    .title p, .title span{
+        font-size:35px;
+    }
+    
+    .map{
+    margin-top: 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+@media (max-width:465px){
+    html{
+        font-size: 50%;
+    }
+    .title{
+        display:flex;
+        align-items: center;
+        min-height:300px;
+        background: url(../images/menu4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .header{
+        padding:0,5rem;
+
+    }
+    .title p{
+        font-size:20px;
+        top:80px;
+    }
+    .title span{
+        font-size:20px;
+        top:20px;
+    }
+    
+    .history p{
+        text-indent: 50px;
+        text-align: justify;
+        font-size: x-small;
+        min-height:250px;
+        width:500px;
+    }
+    .history img{
+        height:200px;
+        width:200px;
+    }
+    .history{
+        position:relative;
+        top:20px;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+    
+    }
+    .map{
+    margin-top: 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.map img{
+    height:200px; width:200px;
+}
+
+.container-6{
+    display: block;
+    padding:20px;
+    text-align: center;
+    font-size: 10px;
+    justify-content: space-around;
+}
+}
+
+
+}  
+  
